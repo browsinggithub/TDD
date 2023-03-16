@@ -1,1 +1,4 @@
 /.pytest_cache
+/.venv
+bank/__pycache__
+tests/__pycache__
