@@ -1,5 +1,5 @@
 """Test"""
-from bank.main import total, total_using_for_loop, list_with_delimiter, percentage, square_root
+from src.main import total, total_using_for_loop, list_with_delimiter, percentage, square_root
 
 
 def test_total_empty() -> None:
@@ -74,4 +74,3 @@ def test_square_of_one() -> None:
 def test_square_by_three() -> None:
     """Test"""
     assert square_root(5,3) == 125
-    
