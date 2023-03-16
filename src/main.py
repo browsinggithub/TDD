@@ -38,3 +38,16 @@ def percentage(num: float, percent: float):
 def square_root(num: int, square: int) -> float:
     """square of a number"""
     return num ** square
+
+def list_creation(numbers: int) -> List[int]:
+    """test list comprehension"""
+    x = [x for x in range(numbers)]
+    return x
+
+def length_of_string(word:str ) -> int:
+    """len"""
+    return len(word)
+
+def map_function(ints: List[int]) -> List[int]:
+    """map func"""
+    return list(map(lambda n: n * 2, ints))

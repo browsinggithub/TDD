@@ -1,5 +1,14 @@
 """Test"""
-from src.main import total, total_using_for_loop, list_with_delimiter, percentage, square_root
+from src.main import (
+    total,
+    total_using_for_loop,
+    list_with_delimiter,
+    percentage,
+    square_root,
+    list_creation,
+    length_of_string,
+    map_function
+)
 
 
 def test_total_empty() -> None:
@@ -59,18 +68,42 @@ def test_percentage_with_above_100_percent() -> None:
 
 def test_square() -> None:
     """Test"""
-    assert square_root(5,2) == 25
+    assert square_root(5, 2) == 25
 
 
 def test_square_of_zero() -> None:
     """Test"""
-    assert square_root(5,0) == 1
+    assert square_root(5, 0) == 1
 
 
 def test_square_of_one() -> None:
     """Test"""
-    assert square_root(5,1) == 5
+    assert square_root(5, 1) == 5
+
 
 def test_square_by_three() -> None:
     """Test"""
-    assert square_root(5,3) == 125
+    assert square_root(5, 3) == 125
+
+def test_list_creation() -> None:
+    """TEST"""
+    assert list_creation(5) == [0,1,2,3,4]
+
+def test_list_creation_empty() -> None:
+    """TEST"""
+    assert list_creation(0) == []
+
+def test_list_creation_ten() -> None:
+    """TEST"""
+    assert list_creation(10) == [0,1,2,3,4,5,6,7,8,9]
+
+def test_length_of_empty_string() -> None:
+    """TEST"""
+    assert length_of_string("") == 0
+
+def test_length_of_real_word() -> None:
+    """TEST"""
+    assert length_of_string("Hello Cameron") == 13
+
+def test_map_function() -> None:
+    assert map_function(range(4)) == [0, 2, 4, 6]
