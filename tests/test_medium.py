@@ -9,7 +9,9 @@ from src.medium import (
     pythonic_common_characters,
     common_two,
     even_nums_list,
-    my_reverse
+    my_reverse,
+    neg_and_pos,
+    pythonic_common_two,
 )
 
 
@@ -73,14 +75,22 @@ def test_second_largest_element_of_list_with_one_int() -> None:
 def test_common_two() -> None:
     assert common_two([1, 2, 3, 4], [3, 4, 5, 6]) == [3, 4]
 
+
+def test_pythonic_common_two() -> None:
+    assert pythonic_common_two([1, 2, 3, 4], [3, 4, 5, 6]) == [3, 4]
+
+
 def test_even_nums_list() -> None:
-    assert even_nums_list([1,2,3,4,5,6]) == [2,4,6]
+    assert even_nums_list([1, 2, 3, 4, 5, 6]) == [2, 4, 6]
+
 
 def test_even_nums_list_empty() -> None:
     assert even_nums_list([]) == []
 
+
 def test_even_nums_list_empty() -> None:
-    assert even_nums_list([1,3,5,7,9]) == []
+    assert even_nums_list([1, 3, 5, 7, 9]) == []
+
 
 def test_reversed() -> None:
-    assert my_reverse([1, 2, 3, 4, 5]) == [5,4,3,2,1]
+    assert my_reverse([1, 2, 3, 4, 5]) == [5, 4, 3, 2, 1]
